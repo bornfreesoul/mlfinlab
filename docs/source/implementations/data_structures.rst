@@ -87,7 +87,7 @@ Dollar Bars
 Statistical Properties
 **********************
 
-The chart below that tick, volume, and dollar bars all exhibit a distribution significantly closer to normal - versus
+The chart below shows that tick, volume, and dollar bars all exhibit a distribution significantly closer to normal - versus
 standard time bars:
 
 .. image:: normality_graph.png
@@ -192,7 +192,7 @@ Now that we have understood the logic of the imbalance bar generation, let's und
 	        expected_imbalance = ewma(imbalance_array, window = num_prev_bars*expected_num_ticks)
 
 
-Note that in algorithm pseudo-code we reset :math:`\theta_t` when bar is formed, in our case the formula for :math:`\theta_t` is:
+Note that in algorithm pseudo-code we reset :math:`\theta_t` when a bar is formed, in our case the formula for :math:`\theta_t` is:
 
 .. math::
     \theta_t = \sum_{t=t^*}^T b_t*v_t
